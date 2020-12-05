@@ -25,7 +25,7 @@ function Form(props) {
 
     useEffect(()=>{
         let item = props.itemSelected;
-        if (item.id !== '') {
+        if (item !== null) {
             setTask({
                 'id': item.id,
                 'name': item.name,
